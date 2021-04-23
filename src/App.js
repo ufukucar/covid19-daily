@@ -16,7 +16,7 @@ function App() {
       .get("https://api.collectapi.com/corona/countriesData", {
         headers: {
           "content-type": "application/json",
-          authorization: `apikey ${process.env.REACT_APP_SOME_VARIABLE}`,
+          authorization: `apikey ${process.env.REACT_APP_COLLECT_API_KEY}`,
         },
       })
       .then((res) => {
